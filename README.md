@@ -6,6 +6,14 @@ Swvl backend challenge RESTful APIs using Node.js, Express, and Mongoose.
 
 ### Installation
 
+Clone the repo:
+
+```bash
+git clone https://github.com/hsiddiqui1479/swvl-backend-challenge-2.0.git
+cd swvl-backend-challenge-2.0
+```
+
+
 Install the dependencies:
 
 ```bash
@@ -13,6 +21,12 @@ yarn install
 ```
 
 Set the correct environment variables:
+
+```bash
+cp .env.example .env
+
+# open .env and modify the environment variables (if needed)
+```
 
 ### Commands
 
