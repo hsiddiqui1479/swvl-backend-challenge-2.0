@@ -1,0 +1,75 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: string
+        email:
+          type: string
+          format: email
+        name:
+          type: string
+        userType:
+          type: string
+          enum: [CUSTOMER, DRIVER]
+        city:
+          type: string
+        country:
+          type: string
+        phone:
+          type: string
+        pushToken:
+          type: string
+        deviceType:
+          type: string
+          enum: [ANDROID, IOS]
+        lang:
+          type: string
+          enum: [en, ar]
+
+    Notification:
+      type: object
+      properties:
+        _id:
+          type: string
+        title:
+          type: object
+          properties:
+            en:
+              type: string
+            ar:
+              type: string
+        body:
+          type: object
+          properties:
+            en:
+              type: string
+            ar:
+              type: string
+
+    UserNotification:
+      type: object
+      properties:
+        _id:
+          type: string
+        userId:
+          type: string
+        notification:
+          type: string
+
+  responses:
+    DuplicateEmail:
+      description: Email already taken
+      content:
+        application/json:
+          example:
+            code: 400
+            message: Email already taken
+    NotFound:
+      description: Not found
+      content:
+        application/json:
+          example:
+            code: 404
+            message: Not found
