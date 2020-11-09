@@ -91,6 +91,6 @@ src\
 
 ## API Documentation
 
-To view the list of available APIs and their specifications, run the server and go to `http://localhost:3000/v1/docs` in your browser. This is achieved by Swagger.io
+To view the list of available APIs and their specifications, run the server and go to `http://localhost:8080/v1/docs` in your browser. This is achieved by Swagger.io
 
 [MIT](LICENSE)
